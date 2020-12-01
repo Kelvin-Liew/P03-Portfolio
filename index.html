@@ -5,18 +5,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="utf-8">
     <title>Kelvin Liew</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <link href="css/main.css" rel="stylesheet">
-    <nav>
-    <ul>
-      <li class="kelvin_nav_icon"><a href="index.html"><img alt="Kelvin Logo" src="images/kelvin_logo.png" width="120"></a></li>
-        <div class="navlink">
-            <li><a href="projects.html">PROJECTS</a></li>
-            <li><a href="about.html">ABOUT</a></li>
-        </div>
-    </ul>
+
+    <nav class="navbar navbar-expand-md navlink">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html"><img alt="Kelvin Logo" src="images/kelvin_logo.png" width="120"></a> </a>
+          <button class="navbar-toggler custom-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+
+          <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item"><a class="nav-link" href="projects.html">PROJECTS</a></li>
+              <li class="nav-item"><a class="nav-link" href="about.html">ABOUT</a></li>
+            </ul>
+          </div>
+    </div>
   </nav>
   <body>
-    <section class="wrapper">
+    <!-- <section class="wrapper">
       <section class="intro">
         <h1>Hey, I’m Kelvin.</h1>
         <h2>A multidisciplinary designer based in Vancouver focused on crafting unique experiences through visual design & illustration.</h2>
@@ -28,6 +40,37 @@
         <h1>Project Placeholder, Link to Style Guide</h1><br><br>
         <a href="styleguide.html" class="button">StyleGuide</a>
       </section>
-    </section>
+    </section> -->
+
+    <section class="wrapper intro">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <h1>Hey, I’m Kelvin.</h1>
+          </div>
+
+          <div class="col-12">
+            <br>
+            <h2>A multidisciplinary designer based in Vancouver focused on crafting unique experiences through visual design & illustration.</h2>
+            <div class="chevron">
+              <a href="#project1"><img alt="chevron" src="images/chevron.png" width="30px"></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="row no-gutters">
+          <div class="col-sm-12 col-lg-6">
+            <img alt="Summit Trail Mockup" src="images/summit_landing_page.png" width=" 100%">
+          </div>
+          <div class="col-sm-12 col-lg-6">
+          <img alt="Summit Trail Mockup" src="images/summit_landing_page.png" width=" 100%">
+</div>
+        </div>
+
+        </section>
+    <footer>
+      Contact Me! <br><a href="mailto:kelvinliew17@gmail.com">kelvinliew17@gmail.com</a>
+    </footer>
+
   </body>
 </html>
