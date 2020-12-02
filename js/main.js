@@ -25,15 +25,15 @@ var TxtType = function(el, toRotate, period) {
         var that = this;
         var delta = 150 - Math.random() * 100;
 
-        // if (this.isDeleting) { delta /= 2; }
+        if (this.isDeleting) { delta /= 2; }
 
         if (!this.isDeleting && this.txt === fullTxt) {
         delta = this.period;
-        // this.isDeleting = true;
-        // } else if (this.isDeleting && this.txt === '') {
-        // this.isDeleting = false;
-        // this.loopNum++;
-        // delta = 500;
+        this.isDeleting = true;
+        } else if (this.isDeleting && this.txt === '') {
+        this.isDeleting = false;
+        this.loopNum++;
+        delta = 500;
         }
 
         setTimeout(function() {
@@ -53,10 +53,10 @@ var TxtType = function(el, toRotate, period) {
         // INJECT CSS
         var css = document.createElement("style");
         css.type = "text/css";
-        // css.innerHTML = ".typewrite > .wrap { border-right: 0.08em solid #fff}";
+        css.innerHTML = ".typewrite > .wrap { border-right: 0.08em solid #fff}";
         document.body.appendChild(css);
 
-      
+
     };
 
     // TYPEWRITER EFFECT FROM

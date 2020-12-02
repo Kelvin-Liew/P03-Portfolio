@@ -9,7 +9,9 @@
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <link href="css/main.css" rel="stylesheet">
+
 
     <nav class="navbar navbar-expand-md navlink">
         <div class="container-fluid">
@@ -27,21 +29,8 @@
           </div>
     </div>
   </nav>
-  <body>
-    <!-- <section class="wrapper">
-      <section class="intro">
-        <h1>Hey, I’m Kelvin.</h1>
-        <h2>A multidisciplinary designer based in Vancouver focused on crafting unique experiences through visual design & illustration.</h2>
-        <div class="chevron">
-          <a href="#project1"><img alt="chevron" src="images/chevron.png" width="30px"></a>
-        </div>
-      </section>
-      <section id="project1" class="project_placeholder">
-        <h1>Project Placeholder, Link to Style Guide</h1><br><br>
-        <a href="styleguide.html" class="button">StyleGuide</a>
-      </section>
-    </section> -->
 
+  <body>
     <section class="wrapper intro">
       <div class="container">
         <div class="row">
@@ -53,24 +42,36 @@
             <br>
             <h2>A multidisciplinary designer based in Vancouver focused on crafting unique experiences through visual design & illustration.</h2>
             <div class="chevron">
-              <a href="#project1"><img alt="chevron" src="images/chevron.png" width="30px"></a>
+              <a href="#projects"><img alt="chevron" src="images/chevron.png" width="30px"></a>
             </div>
           </div>
         </div>
+      </div>
 
-        <div class="row no-gutters">
-          <div class="col-sm-12 col-lg-6">
-            <img alt="Summit Trail Mockup" src="images/summit_landing_page.png" width=" 100%">
-          </div>
-          <div class="col-sm-12 col-lg-6">
-          <img alt="Summit Trail Mockup" src="images/summit_landing_page.png" width=" 100%">
-</div>
-        </div>
+
+              <div class="row no-gutters">
+                <div class="col-sm-12 col-lg-6">
+                  <a href="project2.html" class="filter"><img alt="Summit Trail Mockup" src="images/summit_landing_page.png" width=" 100%">
+                </div>
+                <div id="projects" class="col-sm-12 col-lg-6 ">
+                  <a href="project1.html" class="filter"><img alt="Kinetic Typography Banner" src="images/kinetic_banner.png" width=" 100%"></a>
+                </div>
+              </div>
 
         </section>
-    <footer>
+    <footer class="project_spacer">
       Contact Me! <br><a href="mailto:kelvinliew17@gmail.com">kelvinliew17@gmail.com</a>
     </footer>
-
   </body>
+
+        <div class="loader-wrapper">
+          <span class="loader"><span class="loader-inner"></span></span>
+      </div>
+
+      <script>
+      setTimeout(function(){
+        $('#preloader').fadeOut();
+        $(".loader-wrapper").fadeOut("slow");
+          }, 1000);
+      </script>
 </html>
