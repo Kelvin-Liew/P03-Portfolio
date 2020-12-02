@@ -135,7 +135,6 @@ a:hover {
 }
 
 .intro h2 {
-  font-family: "Nunito Sans", sans-serif;
   font-size: 1.4em;
   font-weight: normal;
 }
@@ -157,11 +156,18 @@ a:hover {
   padding-right: 5%;
 }
 
-.about_page img {
+.profile_pic img {
   display: block;
   margin-left: auto;
   margin-right: auto;
   width: 360px;
+}
+
+.social_media img {
+  display: inline-block;
+  width: 24px;
+  display: block;
+  padding-top: 1em;
 }
 
 .chevron {
@@ -351,7 +357,7 @@ a:hover {
     padding-right: 3%;
   }
 
-  .about_page img {
+  .profile_pic img {
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -392,7 +398,7 @@ a:hover {
     margin-right: auto;
   }
 
-  .about_page img {
+  .profile_pic img {
     width: 70vw;
   }
 
