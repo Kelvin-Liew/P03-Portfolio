@@ -1,4 +1,5 @@
 $mainColor: #0D0D0D;
+$secondaryColor: gray;
 $mainFont: 'Nunito Sans', sans-serif;
 $secondaryFont: 'Source Sans Pro',sans-serif;
 
@@ -94,6 +95,7 @@ h4{
 }
 
 code {
+  color: yellow;
   background-color: gray;
   display: block;
   font-family: monospace;
@@ -116,6 +118,7 @@ a{
 a:hover{
   transition: 0.5s;
   color: yellow;
+  text-decoration: none;
 }
 
 /* BUTTON */
@@ -200,6 +203,30 @@ a:hover{
 /*About page----- end*/
 
 /*PROJECT PAGE -------*/
+
+
+.projects_details{
+  padding-left: 20px;
+}
+
+.projects a{
+  color: white;
+}
+
+.projects a:hover{
+  transition: 0.5s;
+  color: yellow;
+  text-decoration: none;
+}
+
+.projects p{
+  color: gray;
+}
+
+.projects h4{
+  color:$secondaryColor;
+}
+
 .project_placeholder{
   height: 500px;
   margin-right: 0;
@@ -223,6 +250,14 @@ padding-bottom: 20px;
   padding-right: 5%;
 }
 
+.project_page p{
+  font-size: 1.1em;
+  line-height: 1.6;
+}
+
+.border_bottom{
+  border-bottom: 1px solid white;
+}
 
 
 /*YOUTUBE STUFF*/
@@ -255,6 +290,17 @@ padding-bottom: 20px;
 .filter img:hover{
   filter: brightness(100%);
 }
+
+.filter video{
+  filter: brightness(50%);
+  transition: 0.5s;
+}
+
+.filter video:hover{
+  filter: brightness(100%);
+}
+
+
 
 //LOAD ANIMATIONS
 
@@ -372,6 +418,14 @@ background-color: lime;
   padding-right: 3%;
 }
 
+.projects h2{
+  font-size: 40px;
+}
+
+.projects h4{
+  font-size: 20px;
+}
+
 
 .profile_pic img{
   display: block;
@@ -390,6 +444,11 @@ background-color: lime;
 }
 }
 
+@media screen and (max-width: 1200px){
+  .border_bottom{
+    border-bottom: none;
+  }
+}
 
 @media screen and (max-width: 1121px)
 {
@@ -490,16 +549,30 @@ p {
     text-align: left;
     font-size: 7vw;
   }
+
+  .project_page p {
+    font-size: 1.8vh;
+  }
+
+  .projects h2{
+    font-size: 10vw;
+  }
+
+  .projects h4{
+    font-size: 4vw;
+  }
+
+
 }
 
 
 /*Project Modifiers*/
 .project1adjust{
-  top:-73vh;
+  top:-61vh;
 }
 
 .project2adjust{
-  top:-48vh;
+  top:-63vh;
 }
 
 .projects_adjust{

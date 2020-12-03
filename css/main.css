@@ -79,6 +79,7 @@ h4 {
 }
 
 code {
+  color: yellow;
   background-color: gray;
   display: block;
   font-family: monospace;
@@ -99,6 +100,7 @@ a {
 a:hover {
   transition: 0.5s;
   color: yellow;
+  text-decoration: none;
 }
 
 /* BUTTON */
@@ -177,6 +179,28 @@ a:hover {
 
 /*About page----- end*/
 /*PROJECT PAGE -------*/
+.projects_details {
+  padding-left: 20px;
+}
+
+.projects a {
+  color: white;
+}
+
+.projects a:hover {
+  transition: 0.5s;
+  color: yellow;
+  text-decoration: none;
+}
+
+.projects p {
+  color: gray;
+}
+
+.projects h4 {
+  color: gray;
+}
+
 .project_placeholder {
   height: 500px;
   margin-right: 0;
@@ -197,6 +221,15 @@ a:hover {
   padding-bottom: 200px;
   padding-left: 5%;
   padding-right: 5%;
+}
+
+.project_page p {
+  font-size: 1.1em;
+  line-height: 1.6;
+}
+
+.border_bottom {
+  border-bottom: 1px solid white;
 }
 
 /*YOUTUBE STUFF*/
@@ -227,6 +260,15 @@ a:hover {
 }
 
 .filter img:hover {
+  filter: brightness(100%);
+}
+
+.filter video {
+  filter: brightness(50%);
+  transition: 0.5s;
+}
+
+.filter video:hover {
   filter: brightness(100%);
 }
 
@@ -357,6 +399,14 @@ a:hover {
     padding-right: 3%;
   }
 
+  .projects h2 {
+    font-size: 40px;
+  }
+
+  .projects h4 {
+    font-size: 20px;
+  }
+
   .profile_pic img {
     display: block;
     margin-left: auto;
@@ -370,6 +420,11 @@ a:hover {
 
   .intro h2 {
     font-size: 1.2em;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .border_bottom {
+    border-bottom: none;
   }
 }
 @media screen and (max-width: 1121px) {
@@ -454,14 +509,26 @@ a:hover {
     text-align: left;
     font-size: 7vw;
   }
+
+  .project_page p {
+    font-size: 1.8vh;
+  }
+
+  .projects h2 {
+    font-size: 10vw;
+  }
+
+  .projects h4 {
+    font-size: 4vw;
+  }
 }
 /*Project Modifiers*/
 .project1adjust {
-  top: -73vh;
+  top: -61vh;
 }
 
 .project2adjust {
-  top: -48vh;
+  top: -63vh;
 }
 
 .projects_adjust {
