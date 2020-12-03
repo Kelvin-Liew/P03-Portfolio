@@ -12,10 +12,10 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <link href="css/main.css" rel="stylesheet">
 
-
+  <body>
     <nav class="navbar navbar-expand-md navlink">
         <div class="container-fluid">
-          <a class="navbar-brand" href="index.html"><img alt="Kelvin Logo" src="images/kelvin_logo.png" width="120"></a> </a>
+          <a class="navbar-brand" href="index.html"><img alt="Kelvin Logo" src="images/kelvin_logo.png" width="120"></a>
           <button class="navbar-toggler custom-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -30,7 +30,7 @@
     </div>
   </nav>
 
-  <body>
+
     <section class="wrapper intro">
       <div class="container">
         <div class="row">
@@ -42,7 +42,7 @@
             <br>
             <h2>A multidisciplinary designer based in Vancouver focused on crafting unique experiences through visual design & illustration.</h2>
             <div class="chevron filter">
-              <a href="#projects"><img alt="chevron" src="images/chevron.png" width="30px"></a>
+              <a href="#projects"><img alt="chevron" src="images/chevron.png" width="30"></a>
             </div>
           </div>
         </div>
@@ -51,10 +51,10 @@
 
               <div class="row no-gutters">
                 <div class="col-sm-12 col-lg-6">
-                  <a href="project2.html" class="filter"><img alt="Summit Trail Mockup" src="images/summit_landing_page.png" width=" 100%">
+                  <a href="project2.html" class="filter"><img alt="Summit Trail Mockup" src="images/summit_landing_page.png" class="widthmax"></a>
                 </div>
                 <div id="projects" class="col-sm-12 col-lg-6 ">
-                  <a href="project1.html" class="filter"><img alt="Kinetic Typography Banner" src="images/kinetic_banner.png" width=" 100%"></a>
+                  <a href="project1.html" class="filter"><img alt="Kinetic Typography Banner" src="images/kinetic_banner.png" class="widthmax"></a>
                 </div>
               </div>
 
@@ -65,16 +65,14 @@
             <a href=" https://github.com/Kelvin-Liew/P03-Portfolio"  class="leftfloat">GitHub &nbsp;</a>
             <a href="reference_page.html" class="leftfloat">References</a></p>
         </footer>
-  </body>
-
         <div class="loader-wrapper">
           <span class="loader"><span class="loader-inner"></span></span>
       </div>
-
       <script>
       setTimeout(function(){
         $('#preloader').fadeOut();
         $(".loader-wrapper").fadeOut("slow");
           }, 1000);
       </script>
+  </body>
 </html>
