@@ -52,8 +52,8 @@ body {
 }
 
 .navlink a:hover {
-  transition: 0.5s;
-  color: gray;
+  transition: 1s;
+  color: yellow;
 }
 
 /*END OF NAVLINK CLASS*/
@@ -109,24 +109,6 @@ a:hover {
 }
 
 /* BUTTON */
-.button {
-  display: inline-block;
-  border: none;
-  border-radius: 4px;
-  color: black;
-  background-color: white;
-  font-size: 1.5rem;
-  padding: 0.5rem 0.75rem;
-  text-decoration: none;
-  transition: 0.5s;
-}
-
-.button:active, .button:hover {
-  color: white;
-  background-color: #ead3d7;
-  text-decoration: none;
-}
-
 /* Intro Page----- */
 .intro {
   margin-top: 25vh;
@@ -386,7 +368,7 @@ a:hover {
   text-align: center;
   border: 1px solid white;
   color: white;
-  background-color: #0d0d0d;
+  background-color: #0D0D0D;
 }
 
 /*STYLEGUIDE END*/
